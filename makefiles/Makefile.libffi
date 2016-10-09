@@ -1,0 +1,40 @@
+#
+# Makefile - build libffi
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX)/lib/libffi.a
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX)/lib/libffi.a
+	$(RM) -rf $(BUILD_DIR)/$(LIBFFI_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX)/lib/libffi.a: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_host_libffi
+
+
+.PHONY: build_host_libffi
+build_host_libffi: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(LIBFFI_VERSION)
+	tar -xzf $(DOWNLOAD_DIR)/$(LIBFFI_VERSION).tar.gz      -C $(BUILD_DIR)
+	( cd $(BUILD_DIR)/$(LIBFFI_VERSION) && \
+		CFLAGS="-w $(CFLAGS_OSMIN)" $(PATH_EXT) \
+		./configure \
+		--prefix=$(PREFIX) \
+		--enable-static \
+		--disable-shared )
+	( cd $(BUILD_DIR)/$(LIBFFI_VERSION) && $(PATH_EXT) $(MAKE) $(MJOBS) )
+	( cd $(BUILD_DIR)/$(LIBFFI_VERSION) && $(PATH_EXT) $(MAKE) install )
+	$(RM) -rf  $(BUILD_DIR)/$(LIBFFI_VERSION)

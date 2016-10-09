@@ -1,0 +1,40 @@
+#
+# Makefile - build libtool
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX_HOST)/bin/libtool
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX_HOST)/bin/libtool
+	$(RM) -rf $(BUILD_DIR)/$(LIBTOOL_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX_HOST)/bin/libtool: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_host_libtool
+
+
+.PHONY: build_host_libtool
+build_host_libtool: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(LIBTOOL_VERSION)
+	tar -xzf $(DOWNLOAD_DIR)/$(LIBTOOL_VERSION).tar.gz      -C $(BUILD_DIR)
+	( cd $(BUILD_DIR)/$(LIBTOOL_VERSION) && \
+		CFLAGS="-w $(CFLAGS_OSMIN)" \
+		LDFLAGS="$(LDFLAGS_OSMIN)" \
+		$(PATH_EXT) \
+		./configure \
+		--prefix=$(PREFIX_HOST) )
+	( cd $(BUILD_DIR)/$(LIBTOOL_VERSION) && $(PATH_EXT) $(MAKE) $(MJOBS) )
+	( cd $(BUILD_DIR)/$(LIBTOOL_VERSION) && $(PATH_EXT) $(MAKE) install )
+	$(RM) -rf  $(BUILD_DIR)/$(LIBTOOL_VERSION)

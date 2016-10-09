@@ -6,29 +6,362 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		42B1E7F71D9E98BD00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E8121D9E9CBA00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E8141D9E9CBE00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7F31D9E98A600290122;
+			remoteInfo = pkgconfig;
+		};
+		42B1E82E1D9EA2BD00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E8301D9EA2C000290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7F31D9E98A600290122;
+			remoteInfo = pkgconfig;
+		};
+		42B1E83D1D9EA42100290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E83F1D9EA42500290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7F31D9E98A600290122;
+			remoteInfo = pkgconfig;
+		};
+		42B1E8471D9EA43900290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E82A1D9EA2A900290122;
+			remoteInfo = gettext;
+		};
+		42B1E84E1D9F09CF00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E8521D9F09D700290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7F31D9E98A600290122;
+			remoteInfo = pkgconfig;
+		};
+		42B1E85A1D9F09EB00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E82A1D9EA2A900290122;
+			remoteInfo = gettext;
+		};
+		42B1E85C1D9F09EF00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E8391D9EA41900290122;
+			remoteInfo = libffi;
+		};
+		42B1E85F1D9F0EAC00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E8611D9F0EB000290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7F31D9E98A600290122;
+			remoteInfo = pkgconfig;
+		};
+		42B1E8691D9F0EC100290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E82A1D9EA2A900290122;
+			remoteInfo = gettext;
+		};
+		42B1E86B1D9F0EC500290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E8391D9EA41900290122;
+			remoteInfo = libffi;
+		};
+		42B1E86D1D9F0EC900290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E84A1D9F09BA00290122;
+			remoteInfo = glib;
+		};
+		42B1E8831DA1A99000290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7E71D9E944500290122;
+			remoteInfo = download;
+		};
+		42B1E8851DA1A99500290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E7F31D9E98A600290122;
+			remoteInfo = pkgconfig;
+		};
+		42B1E88D1DA1AA7300290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E87F1DA1A97A00290122;
+			remoteInfo = pixman;
+		};
+		42B1E8931DA1B71D00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E80E1D9E9CA100290122;
+			remoteInfo = libtool;
+		};
+		42B1E8951DA1B72400290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E80E1D9E9CA100290122;
+			remoteInfo = libtool;
+		};
+		42B1E8971DA1B72A00290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E80E1D9E9CA100290122;
+			remoteInfo = libtool;
+		};
+		42B1E8991DA1B73100290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E80E1D9E9CA100290122;
+			remoteInfo = libtool;
+		};
+		42B1E89B1DA1B73700290122 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42647F3D1D9E8EEE0025E7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B1E80E1D9E9CA100290122;
+			remoteInfo = libtool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42B1E7E41D9E908400290122 /* Makefile.all */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; name = Makefile.all; path = makefiles/Makefile.all; sourceTree = "<group>"; usesTabs = 1; };
+		42B1E7E51D9E90DA00290122 /* Makefile.def */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; name = Makefile.def; path = makefiles/Makefile.def; sourceTree = "<group>"; usesTabs = 1; };
+		42B1E7E61D9E919400290122 /* Makefile.dl */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; name = Makefile.dl; path = makefiles/Makefile.dl; sourceTree = "<group>"; usesTabs = 1; };
+		42B1E7F21D9E96CD00290122 /* Makefile.pkgconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.pkgconfig; path = makefiles/Makefile.pkgconfig; sourceTree = "<group>"; usesTabs = 1; };
+		42B1E80D1D9E9C1000290122 /* Makefile.libtool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.libtool; path = makefiles/Makefile.libtool; sourceTree = "<group>"; };
+		42B1E8291D9E9F4700290122 /* Makefile.gettext */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.gettext; path = makefiles/Makefile.gettext; sourceTree = "<group>"; };
+		42B1E8381D9EA30A00290122 /* Makefile.libffi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.libffi; path = makefiles/Makefile.libffi; sourceTree = "<group>"; };
+		42B1E8491D9F053C00290122 /* Makefile.glib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.glib; path = makefiles/Makefile.glib; sourceTree = "<group>"; };
+		42B1E85E1D9F0DD200290122 /* Makefile.qemu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.qemu; path = makefiles/Makefile.qemu; sourceTree = "<group>"; };
+		42B1E87E1DA1A59E00290122 /* Makefile.pixman */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.pixman; path = makefiles/Makefile.pixman; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		42647F3C1D9E8EEE0025E7BE = {
 			isa = PBXGroup;
 			children = (
+				42B1E7E31D9E907800290122 /* makefiles */,
 			);
 			sourceTree = "<group>";
+		};
+		42B1E7E31D9E907800290122 /* makefiles */ = {
+			isa = PBXGroup;
+			children = (
+				42B1E7E51D9E90DA00290122 /* Makefile.def */,
+				42B1E7E61D9E919400290122 /* Makefile.dl */,
+				42B1E7F21D9E96CD00290122 /* Makefile.pkgconfig */,
+				42B1E87E1DA1A59E00290122 /* Makefile.pixman */,
+				42B1E80D1D9E9C1000290122 /* Makefile.libtool */,
+				42B1E8291D9E9F4700290122 /* Makefile.gettext */,
+				42B1E8381D9EA30A00290122 /* Makefile.libffi */,
+				42B1E8491D9F053C00290122 /* Makefile.glib */,
+				42B1E85E1D9F0DD200290122 /* Makefile.qemu */,
+				42B1E7E41D9E908400290122 /* Makefile.all */,
+			);
+			name = makefiles;
+			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
 		42647F411D9E8EEE0025E7BE /* qemu */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = "-f Makefile.qemu $(ACTION)";
 			buildConfigurationList = 42647F441D9E8EEE0025E7BE /* Build configuration list for PBXLegacyTarget "qemu" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "";
+			buildWorkingDirectory = makefiles;
 			dependencies = (
+				42B1E89C1DA1B73700290122 /* PBXTargetDependency */,
+				42B1E88E1DA1AA7300290122 /* PBXTargetDependency */,
+				42B1E86E1D9F0EC900290122 /* PBXTargetDependency */,
+				42B1E86C1D9F0EC500290122 /* PBXTargetDependency */,
+				42B1E86A1D9F0EC100290122 /* PBXTargetDependency */,
+				42B1E8621D9F0EB000290122 /* PBXTargetDependency */,
+				42B1E8601D9F0EAC00290122 /* PBXTargetDependency */,
 			);
 			name = qemu;
 			passBuildSettingsInEnvironment = 0;
 			productName = qemu;
+		};
+		42B1E7E71D9E944500290122 /* download */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.dl $(ACTION)";
+			buildConfigurationList = 42B1E7E81D9E944500290122 /* Build configuration list for PBXLegacyTarget "download" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+			);
+			name = download;
+			passBuildSettingsInEnvironment = 0;
+			productName = download;
+		};
+		42B1E7F31D9E98A600290122 /* pkgconfig */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.pkgconfig $(ACTION)";
+			buildConfigurationList = 42B1E7F41D9E98A600290122 /* Build configuration list for PBXLegacyTarget "pkgconfig" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+				42B1E7F81D9E98BD00290122 /* PBXTargetDependency */,
+			);
+			name = pkgconfig;
+			passBuildSettingsInEnvironment = 0;
+			productName = pkgconfig;
+		};
+		42B1E80E1D9E9CA100290122 /* libtool */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.libtool $(ACTION)";
+			buildConfigurationList = 42B1E80F1D9E9CA100290122 /* Build configuration list for PBXLegacyTarget "libtool" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+				42B1E8151D9E9CBE00290122 /* PBXTargetDependency */,
+				42B1E8131D9E9CBA00290122 /* PBXTargetDependency */,
+			);
+			name = libtool;
+			passBuildSettingsInEnvironment = 0;
+			productName = libtool;
+		};
+		42B1E82A1D9EA2A900290122 /* gettext */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.gettext $(ACTION)";
+			buildConfigurationList = 42B1E82B1D9EA2A900290122 /* Build configuration list for PBXLegacyTarget "gettext" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+				42B1E8961DA1B72400290122 /* PBXTargetDependency */,
+				42B1E8311D9EA2C000290122 /* PBXTargetDependency */,
+				42B1E82F1D9EA2BD00290122 /* PBXTargetDependency */,
+			);
+			name = gettext;
+			passBuildSettingsInEnvironment = 0;
+			productName = gettext;
+		};
+		42B1E8391D9EA41900290122 /* libffi */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.libffi $(ACTION)";
+			buildConfigurationList = 42B1E83A1D9EA41900290122 /* Build configuration list for PBXLegacyTarget "libffi" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+				42B1E8981DA1B72A00290122 /* PBXTargetDependency */,
+				42B1E8481D9EA43900290122 /* PBXTargetDependency */,
+				42B1E8401D9EA42500290122 /* PBXTargetDependency */,
+				42B1E83E1D9EA42100290122 /* PBXTargetDependency */,
+			);
+			name = libffi;
+			passBuildSettingsInEnvironment = 0;
+			productName = libffi;
+		};
+		42B1E84A1D9F09BA00290122 /* glib */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.glib $(ACTION)";
+			buildConfigurationList = 42B1E84B1D9F09BA00290122 /* Build configuration list for PBXLegacyTarget "glib" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+				42B1E89A1DA1B73100290122 /* PBXTargetDependency */,
+				42B1E85D1D9F09EF00290122 /* PBXTargetDependency */,
+				42B1E85B1D9F09EB00290122 /* PBXTargetDependency */,
+				42B1E8531D9F09D700290122 /* PBXTargetDependency */,
+				42B1E84F1D9F09CF00290122 /* PBXTargetDependency */,
+			);
+			name = glib;
+			passBuildSettingsInEnvironment = 0;
+			productName = glib;
+		};
+		42B1E87F1DA1A97A00290122 /* pixman */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f Makefile.pixman $(ACTION)";
+			buildConfigurationList = 42B1E8801DA1A97A00290122 /* Build configuration list for PBXLegacyTarget "pixman" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = makefiles;
+			dependencies = (
+				42B1E8941DA1B71D00290122 /* PBXTargetDependency */,
+				42B1E8861DA1A99500290122 /* PBXTargetDependency */,
+				42B1E8841DA1A99000290122 /* PBXTargetDependency */,
+			);
+			name = pixman;
+			passBuildSettingsInEnvironment = 0;
+			productName = pixman;
 		};
 /* End PBXLegacyTarget section */
 
@@ -40,6 +373,27 @@
 				ORGANIZATIONNAME = "Heiko Abraham";
 				TargetAttributes = {
 					42647F411D9E8EEE0025E7BE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E7E71D9E944500290122 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E7F31D9E98A600290122 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E80E1D9E9CA100290122 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E82A1D9EA2A900290122 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E8391D9EA41900290122 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E84A1D9F09BA00290122 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					42B1E87F1DA1A97A00290122 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -55,10 +409,145 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				42B1E7E71D9E944500290122 /* download */,
+				42B1E7F31D9E98A600290122 /* pkgconfig */,
+				42B1E80E1D9E9CA100290122 /* libtool */,
+				42B1E87F1DA1A97A00290122 /* pixman */,
+				42B1E82A1D9EA2A900290122 /* gettext */,
+				42B1E8391D9EA41900290122 /* libffi */,
+				42B1E84A1D9F09BA00290122 /* glib */,
 				42647F411D9E8EEE0025E7BE /* qemu */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXTargetDependency section */
+		42B1E7F81D9E98BD00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E7F71D9E98BD00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8131D9E9CBA00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E8121D9E9CBA00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8151D9E9CBE00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7F31D9E98A600290122 /* pkgconfig */;
+			targetProxy = 42B1E8141D9E9CBE00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E82F1D9EA2BD00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E82E1D9EA2BD00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8311D9EA2C000290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7F31D9E98A600290122 /* pkgconfig */;
+			targetProxy = 42B1E8301D9EA2C000290122 /* PBXContainerItemProxy */;
+		};
+		42B1E83E1D9EA42100290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E83D1D9EA42100290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8401D9EA42500290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7F31D9E98A600290122 /* pkgconfig */;
+			targetProxy = 42B1E83F1D9EA42500290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8481D9EA43900290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E82A1D9EA2A900290122 /* gettext */;
+			targetProxy = 42B1E8471D9EA43900290122 /* PBXContainerItemProxy */;
+		};
+		42B1E84F1D9F09CF00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E84E1D9F09CF00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8531D9F09D700290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7F31D9E98A600290122 /* pkgconfig */;
+			targetProxy = 42B1E8521D9F09D700290122 /* PBXContainerItemProxy */;
+		};
+		42B1E85B1D9F09EB00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E82A1D9EA2A900290122 /* gettext */;
+			targetProxy = 42B1E85A1D9F09EB00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E85D1D9F09EF00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E8391D9EA41900290122 /* libffi */;
+			targetProxy = 42B1E85C1D9F09EF00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8601D9F0EAC00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E85F1D9F0EAC00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8621D9F0EB000290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7F31D9E98A600290122 /* pkgconfig */;
+			targetProxy = 42B1E8611D9F0EB000290122 /* PBXContainerItemProxy */;
+		};
+		42B1E86A1D9F0EC100290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E82A1D9EA2A900290122 /* gettext */;
+			targetProxy = 42B1E8691D9F0EC100290122 /* PBXContainerItemProxy */;
+		};
+		42B1E86C1D9F0EC500290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E8391D9EA41900290122 /* libffi */;
+			targetProxy = 42B1E86B1D9F0EC500290122 /* PBXContainerItemProxy */;
+		};
+		42B1E86E1D9F0EC900290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E84A1D9F09BA00290122 /* glib */;
+			targetProxy = 42B1E86D1D9F0EC900290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8841DA1A99000290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7E71D9E944500290122 /* download */;
+			targetProxy = 42B1E8831DA1A99000290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8861DA1A99500290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E7F31D9E98A600290122 /* pkgconfig */;
+			targetProxy = 42B1E8851DA1A99500290122 /* PBXContainerItemProxy */;
+		};
+		42B1E88E1DA1AA7300290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E87F1DA1A97A00290122 /* pixman */;
+			targetProxy = 42B1E88D1DA1AA7300290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8941DA1B71D00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E80E1D9E9CA100290122 /* libtool */;
+			targetProxy = 42B1E8931DA1B71D00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8961DA1B72400290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E80E1D9E9CA100290122 /* libtool */;
+			targetProxy = 42B1E8951DA1B72400290122 /* PBXContainerItemProxy */;
+		};
+		42B1E8981DA1B72A00290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E80E1D9E9CA100290122 /* libtool */;
+			targetProxy = 42B1E8971DA1B72A00290122 /* PBXContainerItemProxy */;
+		};
+		42B1E89A1DA1B73100290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E80E1D9E9CA100290122 /* libtool */;
+			targetProxy = 42B1E8991DA1B73100290122 /* PBXContainerItemProxy */;
+		};
+		42B1E89C1DA1B73700290122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B1E80E1D9E9CA100290122 /* libtool */;
+			targetProxy = 42B1E89B1DA1B73700290122 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		42647F421D9E8EEE0025E7BE /* Debug */ = {
@@ -159,6 +648,167 @@
 			};
 			name = Release;
 		};
+		42B1E7E91D9E944500290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E7EA1D9E944500290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42B1E7F51D9E98A600290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E7F61D9E98A600290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42B1E8101D9E9CA100290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E8111D9E9CA100290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42B1E82C1D9EA2A900290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E82D1D9EA2A900290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42B1E83B1D9EA41900290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E83C1D9EA41900290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42B1E84C1D9F09BA00290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E84D1D9F09BA00290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42B1E8811DA1A97A00290122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42B1E8821DA1A97A00290122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -178,6 +828,70 @@
 				42647F461D9E8EEE0025E7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E7E81D9E944500290122 /* Build configuration list for PBXLegacyTarget "download" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E7E91D9E944500290122 /* Debug */,
+				42B1E7EA1D9E944500290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E7F41D9E98A600290122 /* Build configuration list for PBXLegacyTarget "pkgconfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E7F51D9E98A600290122 /* Debug */,
+				42B1E7F61D9E98A600290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E80F1D9E9CA100290122 /* Build configuration list for PBXLegacyTarget "libtool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E8101D9E9CA100290122 /* Debug */,
+				42B1E8111D9E9CA100290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E82B1D9EA2A900290122 /* Build configuration list for PBXLegacyTarget "gettext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E82C1D9EA2A900290122 /* Debug */,
+				42B1E82D1D9EA2A900290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E83A1D9EA41900290122 /* Build configuration list for PBXLegacyTarget "libffi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E83B1D9EA41900290122 /* Debug */,
+				42B1E83C1D9EA41900290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E84B1D9F09BA00290122 /* Build configuration list for PBXLegacyTarget "glib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E84C1D9F09BA00290122 /* Debug */,
+				42B1E84D1D9F09BA00290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B1E8801DA1A97A00290122 /* Build configuration list for PBXLegacyTarget "pixman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B1E8811DA1A97A00290122 /* Debug */,
+				42B1E8821DA1A97A00290122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

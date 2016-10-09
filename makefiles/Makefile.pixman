@@ -1,0 +1,44 @@
+#
+# Makefile - build pixman
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX)/lib/libpixman-1.a
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX)/lib/libpixman-1.a
+	$(RM) -rf $(BUILD_DIR)/$(PIXMAN_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX)/lib/libpixman-1.a: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_host_pixman
+
+
+.PHONY: build_host_pixman
+build_host_pixman: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(PIXMAN_VERSION)
+	tar -xzf $(DOWNLOAD_DIR)/$(PIXMAN_VERSION).tar.gz      -C $(BUILD_DIR)
+	( cd $(BUILD_DIR)/$(PIXMAN_VERSION) && \
+		CFLAGS="-w $(CFLAGS_OSMIN)" \
+		LDFLAGS="$(LDFLAGS_OSMIN)" \
+		$(PATH_EXT) \
+		GNU_GCJ=/usr/bin/true ./configure \
+		--prefix=$(PREFIX) \
+		--enable-static \
+		--enable-shared \
+		--disable-gtk  )
+	( cd $(BUILD_DIR)/$(PIXMAN_VERSION) && $(PATH_EXT) $(MAKE) $(MJOBS) )
+	( cd $(BUILD_DIR)/$(PIXMAN_VERSION) && $(PATH_EXT) $(MAKE) install )
+	( cd $(PREFIX)/lib && $(RM) -f libpixman*dylib )
+	$(RM) -rf  $(BUILD_DIR)/$(PIXMAN_VERSION)

@@ -1,0 +1,43 @@
+#
+# Makefile - build pkgconfig
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX_HOST)/bin/pkg-config
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX_HOST)/bin/pkg-config
+	$(RM) -rf $(BUILD_DIR)/$(PKGCONFIG_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX_HOST)/bin/pkg-config: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_host_pkgconfig
+
+
+.PHONY: build_host_pkgconfig
+build_host_pkgconfig: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(PKGCONFIG_VERSION)
+	tar -xzf $(DOWNLOAD_DIR)/$(PKGCONFIG_VERSION).tar.gz      -C $(BUILD_DIR)
+	( cd $(BUILD_DIR)/$(PKGCONFIG_VERSION) && \
+		CFLAGS="-w $(CFLAGS_OSMIN)" \
+		LDFLAGS="$(LDFLAGS_OSMIN)" \
+		$(PATH_EXT) \
+		./configure \
+		--exec-prefix=$(PREFIX_HOST) \
+		--prefix=$(PREFIX_HOST) \
+		--with-internal-glib \
+		--with-pc-path=$(PREFIX)/lib/pkgconfig )
+	( cd $(BUILD_DIR)/$(PKGCONFIG_VERSION) && $(PATH_EXT) $(MAKE) $(MJOBS) )
+	( cd $(BUILD_DIR)/$(PKGCONFIG_VERSION) && $(PATH_EXT) $(MAKE) install )
+	$(RM) -rf  $(BUILD_DIR)/$(PKGCONFIG_VERSION)

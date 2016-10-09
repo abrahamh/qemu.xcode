@@ -1,0 +1,51 @@
+#
+# Makefile - build glib
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX)/bin/glib-genmarshal
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX)/bin/glib-genmarshal
+	$(RM) -rf $(BUILD_DIR)/$(GLIB_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX)/bin/glib-genmarshal: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_host_glib
+
+
+.PHONY: build_host_glib
+build_host_glib: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(GLIB_VERSION)
+	tar -xJf$(DOWNLOAD_DIR)/$(GLIB_VERSION).tar.xz -C $(BUILD_DIR)
+	( cd $(BUILD_DIR)/$(GLIB_VERSION) && $(PATH_EXT) \
+		CFLAGS="-w -I$(PREFIX)/include $(CFLAGS_OSMIN)" \
+		LDFLAGS="-L$(PREFIX)/lib $(LDFLAGS_OSMIN)" \
+		./configure \
+		--prefix=$(PREFIX) \
+		--disable-static \
+		--enable-shared \
+		--disable-libelf \
+		--disable-dtrace \
+		--enable-debug=no \
+		--disable-mem-pools \
+		--enable-gc-friendly \
+		--disable-coverage \
+		--disable-gtk-doc \
+		--disable-gtk-doc-html \
+		--disable-gtk-doc-pdf \
+		--disable-man )
+	( cd $(BUILD_DIR)/$(GLIB_VERSION) && $(PATH_EXT) $(MAKE) )
+	( cd $(BUILD_DIR)/$(GLIB_VERSION) && $(PATH_EXT) $(MAKE) install )
+	$(RM) -rf  $(BUILD_DIR)/$(GLIB_VERSION)

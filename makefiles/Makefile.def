@@ -1,0 +1,69 @@
+#
+# Makefile - global makefile defines
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+# current working directory
+CURRENT_DIR:=$(shell pwd)
+
+ifeq ($(MAKEFILENAME),)
+MAKEFILENAME := $(firstword $(MAKEFILE_LIST))
+endif
+
+#
+# detect number of CPUs usable for make jobs
+#
+NUM_CPUS=$(shell sysctl -n hw.ncpu)
+MJOBS=-j$(NUM_CPUS)
+
+RM=/bin/rm
+MKDIR=/bin/mkdir
+
+#
+# define project directories
+#
+DOWNLOAD_DIR:=../download-cache
+BUILD_DIR:=$(CURRENT_DIR)/../builddir
+PREFIX_HOST:=$(BUILD_DIR)/usr-host
+PREFIX:=$(BUILD_DIR)/usr/local/
+CFLAGS_OSMIN="-mmacosx-version-min=10.11"
+LDFLAGS_OSMIN="-mmacosx-version-min=10.11"
+
+#
+# prepend own tools to path
+#
+PATH_EXT=PATH=$(PREFIX_HOST)/bin:$(PREFIX)/bin:$(PATH)
+PATH_EXT2=PATH=$(PREFIX_HOST)/bin:$(PREFIX)/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+#
+# define source versions
+#
+# QEMU_VERSION=qemu-2.7.0
+# QEMU_VERSION=qemu-2.6.2
+QEMU_VERSION=qemu-2.5.1.1
+GLIB_MAJOR=2.46
+GLIB_VERSION=glib-2.46.2
+LIBTOOL_VERSION=libtool-2.4.6
+GETTEXT_VERSION=gettext-0.19.7
+PIXMAN_VERSION=pixman-0.34.0
+PKGCONFIG_VERSION=pkg-config-0.29.1
+LIBFFI_VERSION=libffi-3.0.13
+LIBZ_VERSION_NO=1.2.8
+LIBZ_VERSION=zlib-$(LIBZ_VERSION_NO)
+
+
+all: build
+
+
+.PHONY: cleanall
+cleanall:
+	$(RM) -rf $(BUILD_DIR)/
+	$(RM) -rf $(PREFIX_HOST)/
+
+
+$(PREFIX)/:
+	$(MKDIR) -p $(PREFIX)/
+
+$(BUILD_DIR)/:
+	$(MKDIR) -p $(BUILD_DIR)/

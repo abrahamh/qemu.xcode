@@ -1,0 +1,17 @@
+#
+# Makefile - global makefile defines
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+.PHONY: build
+build:
+	$(MAKE) -f Makefile.dl build
+	$(MAKE) -f Makefile.pkgconfig build
+	$(MAKE) -f Makefile.libtool build
+	$(MAKE) -f Makefile.gettext build
+	$(MAKE) -f Makefile.libffi build
+	$(MAKE) -f Makefile.glib build
+	$(MAKE) -f Makefile.qemu build

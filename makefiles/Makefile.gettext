@@ -1,0 +1,49 @@
+#
+# Makefile - build gettext
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX)/bin/gettext
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX)/bin/gettext
+	$(RM) -rf $(BUILD_DIR)/$(GETTEXT_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX)/bin/gettext: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_host_gettext
+
+
+.PHONY: build_host_gettext
+build_host_gettext: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(GETTEXT_VERSION)
+	tar -xzf $(DOWNLOAD_DIR)/$(GETTEXT_VERSION).tar.gz      -C $(BUILD_DIR)
+	( cd $(BUILD_DIR)/$(GETTEXT_VERSION) && \
+		CFLAGS="-w $(CFLAGS_OSMIN)" \
+		LDFLAGS="$(LDFLAGS_OSMIN)" \
+		GCJ=/usr/bin/true $(PATH_EXT) \
+		./configure \
+		--prefix=$(PREFIX) \
+		--disable-static \
+		--enable-shared \
+		--disable-libasprintf \
+		--without-emacs \
+		--disable-java \
+		--disable-native-java )
+	( cd $(BUILD_DIR)/$(GETTEXT_VERSION) && $(PATH_EXT) $(MAKE) )
+	( cd $(BUILD_DIR)/$(GETTEXT_VERSION) && $(PATH_EXT) $(MAKE) install )
+	$(RM) -rf  $(BUILD_DIR)/$(GETTEXT_VERSION)
+	$(RM) -rf $(PREFIX)/share/doc/gettext
+	( cd $(PREFIX)/share/ && rm -rf doc )
+	( cd $(PREFIX)/share/ && rm -rf man )

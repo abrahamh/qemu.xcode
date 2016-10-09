@@ -1,0 +1,71 @@
+#
+# Makefile - build qemu
+# Copyright (C) 2015-2016 Heiko Abraham
+# All rights reserved.
+#
+QEMU_TARGETS=arm-softmmu,i386-softmmu,x86_64-softmmu
+
+
+include Makefile.def
+
+
+.PHONY: build
+build:
+	$(MAKE) -f $(MAKEFILENAME) $(PREFIX)/bin/qemu-system-x86_64
+
+
+.PHONY: clean
+clean:
+	$(RM) -f $(PREFIX)/bin/qemu-system-x86_64
+	$(RM) -rf $(BUILD_DIR)/$(QEMU_VERSION)
+
+
+.PHONY: install
+install:
+
+$(PREFIX)/bin/qemu-system-x86_64: $(MAKEFILE_LIST)
+	$(MAKE) -f $(MAKEFILENAME) build_qemu
+
+
+.PHONY: build_qemu
+build_qemu: $(BUILD_DIR)
+	$(RM) -rf $(BUILD_DIR)/$(QEMU_VERSION)
+	tar -xjf $(DOWNLOAD_DIR)/$(QEMU_VERSION).tar.bz2      -C $(BUILD_DIR)
+	cp ../patches/qemu_remove_pixman_tests.patch  $(BUILD_DIR)/$(QEMU_VERSION)
+	cp ../patches/qemu_pthread_yosemite_fix.patch $(BUILD_DIR)/$(QEMU_VERSION)
+	# cp ../patches/qemu_pixman_mmx.patch $(BUILD_DIR)/$(QEMU_VERSION)
+	( cd $(BUILD_DIR)/$(QEMU_VERSION) && patch -p1 < qemu_remove_pixman_tests.patch )
+	( cd $(BUILD_DIR)/$(QEMU_VERSION) && patch -p1 < qemu_pthread_yosemite_fix.patch )
+	# ( cd $(BUILD_DIR)/$(QEMU_VERSION) && patch -p1 < qemu_pixman_mmx.patch )
+	( cd $(BUILD_DIR)/$(QEMU_VERSION) && $(PATH_EXT2) \
+		./configure \
+		--extra-cflags="-w $(CFLAGS_OSMIN)" \
+		--extra-ldflags="$(LDFLAGS_OSMIN)" \
+		--prefix=$(PREFIX) \
+		--target-list=$(QEMU_TARGETS) \
+		--disable-vnc \
+		--disable-docs \
+		--enable-fdt  \
+		--disable-libusb \
+		--enable-bsd-user \
+		--enable-system \
+		--enable-cocoa \
+		--enable-pie \
+		--enable-vhost-net )
+	( cd $(BUILD_DIR)/$(QEMU_VERSION) && $(PATH_EXT2) $(MAKE) $(MJOBS) )
+	( cd $(BUILD_DIR)/$(QEMU_VERSION) && $(PATH_EXT2) $(MAKE) install )
+	$(RM) -rf  $(BUILD_DIR)/$(QEMU_VERSION)
+	$(MAKE) -f $(MAKEFILENAME) strip_results
+
+.PHONY: strip_results
+strip_results:
+	( cd $(PREFIX) && $(RM) -rf include var )
+	( cd $(PREFIX) && $(RM) -rf autopoint envsubst ivshmem-* )
+	( cd $(PREFIX)/lib && $(RM) -rf pkgconfig )
+	( cd $(PREFIX)/bin && $(RM) -rf msg* gettext* xgettext ngettext recode-sr-latin )
+	( cd $(PREFIX)/lib && $(RM) -rf gettext libgettest*)
+	( cd $(PREFIX)/bin && $(RM) -rf g* )
+	( cd $(PREFIX)/lib && $(RM) -rf *.la *.a )
+	( cd $(PREFIX)/lib && $(RM) -rf glib-2.0 libffi-3.0.13 gio )
+	( cd $(PREFIX)/share && $(RM) -rf aclocal gdb bash-completion gettext* )
+	( cd $(PREFIX)/share && $(RM) -rf gtk-doc info locale man glib* )
