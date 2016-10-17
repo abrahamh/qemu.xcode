@@ -30,6 +30,7 @@ xcuserdata
 *.xccheckout
 *.xcuserstate
 *.xcscmblueprint
+*.tar.gz
 
 download-cache/
 builddir/
