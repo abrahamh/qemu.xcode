@@ -1,0 +1,12 @@
+diff -Naur qemu-orig/configure qemu-new/configure
+--- qemu-orig/configure	2016-10-01 00:40:05.000000000 +0200
++++ qemu-new/configure	2016-10-01 00:40:43.000000000 +0200
+@@ -3078,7 +3078,7 @@
+ 
+ ##########################################
+ # pthread probe
+-PTHREADLIBS_LIST="-pthread -lpthread -lpthreadGC2"
++PTHREADLIBS_LIST="-pthread -lpthread -lpthreadGC2 -lc"
+ 
+ pthread=no
+ cat > $TMPC << EOF
