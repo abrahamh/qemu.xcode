@@ -185,6 +185,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4251812F1DB56B100064E6EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		42A2FA5F1DB5716D0004E6B0 /* qemu_pthread_yosemite_fix.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = qemu_pthread_yosemite_fix.patch; path = patches/qemu_pthread_yosemite_fix.patch; sourceTree = "<group>"; };
+		42A2FA601DB5716D0004E6B0 /* qemu_remove_pixman_tests.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = qemu_remove_pixman_tests.patch; path = patches/qemu_remove_pixman_tests.patch; sourceTree = "<group>"; };
 		42B1E7E41D9E908400290122 /* Makefile.all */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; name = Makefile.all; path = makefiles/Makefile.all; sourceTree = "<group>"; usesTabs = 1; };
 		42B1E7E51D9E90DA00290122 /* Makefile.def */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; name = Makefile.def; path = makefiles/Makefile.def; sourceTree = "<group>"; usesTabs = 1; };
 		42B1E7E61D9E919400290122 /* Makefile.dl */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; name = Makefile.dl; path = makefiles/Makefile.dl; sourceTree = "<group>"; usesTabs = 1; };
@@ -198,11 +201,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		4251812E1DB56B050064E6EA /* stuff */ = {
+			isa = PBXGroup;
+			children = (
+				42A2FA5E1DB571590004E6B0 /* patches */,
+				4251812F1DB56B100064E6EA /* README.md */,
+			);
+			name = stuff;
+			sourceTree = "<group>";
+		};
 		42647F3C1D9E8EEE0025E7BE = {
 			isa = PBXGroup;
 			children = (
+				4251812E1DB56B050064E6EA /* stuff */,
 				42B1E7E31D9E907800290122 /* makefiles */,
+				42A2FA611DB571870004E6B0 /* results */,
 			);
+			sourceTree = "<group>";
+		};
+		42A2FA5E1DB571590004E6B0 /* patches */ = {
+			isa = PBXGroup;
+			children = (
+				42A2FA5F1DB5716D0004E6B0 /* qemu_pthread_yosemite_fix.patch */,
+				42A2FA601DB5716D0004E6B0 /* qemu_remove_pixman_tests.patch */,
+			);
+			name = patches;
+			sourceTree = "<group>";
+		};
+		42A2FA611DB571870004E6B0 /* results */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = results;
 			sourceTree = "<group>";
 		};
 		42B1E7E31D9E907800290122 /* makefiles */ = {
