@@ -56,6 +56,7 @@ build_qemu: $(BUILD_DIR)
 	( cd $(BUILD_DIR)/$(QEMU_VERSION) && $(PATH_EXT2) $(MAKE) install )
 	$(RM) -rf  $(BUILD_DIR)/$(QEMU_VERSION)
 	$(MAKE) -f $(MAKEFILENAME) strip_results
+	$(MAKE) -f $(MAKEFILENAME) pack_results
 
 .PHONY: strip_results
 strip_results:
@@ -69,3 +70,10 @@ strip_results:
 	( cd $(PREFIX)/lib && $(RM) -rf glib-2.0 libffi-3.0.13 gio )
 	( cd $(PREFIX)/share && $(RM) -rf aclocal gdb bash-completion gettext* )
 	( cd $(PREFIX)/share && $(RM) -rf gtk-doc info locale man glib* )
+	( cd $(PREFIX)/bin && rm -f autopoint envsubst ivshmem-* )
+
+
+.PHONY: pack_results
+pack_results:
+	( cd $(BUILD_DIR) && tar -f heiko.tar.gz -cpz usr )
+	mv $(BUILD_DIR)/heiko.tar.gz ../$(QEMU_VERSION).tar.gz
